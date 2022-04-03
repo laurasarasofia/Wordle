@@ -15,6 +15,12 @@ public class Wordle {
         SanojenKäsittely sanalista = new SanojenKäsittely(myObj); //Luo SanojenKäsittely objektin sanalista jonka attribuuttina on myObj
         sanalista.tulostaSana(); //kutsuu sanalistan metodia
         System.out.println(sanalista.getSana()); //tulostaa sanalistan metodin tuoman sanan
+        System.out.println(sanalista.getSana()); //tulostaa sanalistan metodin tuoman sanan
+        System.out.println(sanalista.getSana()); //tulostaa sanalistan metodin tuoman sanan
+        System.out.println(sanalista.getSana()); //tulostaa sanalistan metodin tuoman sanan
+        System.out.println(sanalista.getSana()); //tulostaa sanalistan metodin tuoman sanan
+        System.out.println(sanalista.getSana()); //tulostaa sanalistan metodin tuoman sanan
+        System.out.println(sanalista.getSana()); //tulostaa sanalistan metodin tuoman sanan
 
 
 

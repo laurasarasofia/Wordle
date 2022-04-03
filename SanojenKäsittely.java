@@ -24,7 +24,7 @@ public class SanojenKäsittely {
         doc.getDocumentElement().normalize();  //rivit 20-23 käsittelee sanat.xml tiedostoa käytettävään muotoon
 
         NodeList list = doc.getElementsByTagName("sana"); //muodostetaan NodeList lista sanat.xml sanoista
-        System.out.println("Root element :" + doc.getDocumentElement().getNodeName()); //Tulostaa juuren nimen (ei tarpeellinen toiminnan kannalta)
+        //System.out.println("Root element :" + doc.getDocumentElement().getNodeName()); //Tulostaa juuren nimen (ei tarpeellinen toiminnan kannalta)
         this.lista=list;
         return list;
     }
