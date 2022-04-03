@@ -6,6 +6,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.DocumentBuilder;
 
 /**
@@ -13,14 +14,16 @@ import javax.xml.parsers.DocumentBuilder;
  */
 public class Wordle {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
+
         System.out.println("hello");
         File myObj = new File("sanat.xml"); // Specify the filename
-        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-         DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-         Document doc = dBuilder.parse(myObj);
-         doc.getDocumentElement().normalize();
-         System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
+        SanojenKäsittely sanalista = new SanojenKäsittely(myObj);
+        sanalista.tulostaSana();
+
+
+
+     
 
     }
 }
