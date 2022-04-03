@@ -1,16 +1,16 @@
 import java.io.*;
-import javax.xml.*;
+//import javax.xml.*;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.DocumentBuilder;
-import java.lang.*;
+//import java.lang.*;
 import org.w3c.dom.NodeList;
 
 public class SanojenKäsittely {
     File file;
-    NodeList lista;
+
 
     public SanojenKäsittely(File file){
         this.file=file;
@@ -25,7 +25,6 @@ public class SanojenKäsittely {
 
         NodeList list = doc.getElementsByTagName("sana"); //muodostetaan NodeList lista sanat.xml sanoista
         //System.out.println("Root element :" + doc.getDocumentElement().getNodeName()); //Tulostaa juuren nimen (ei tarpeellinen toiminnan kannalta)
-        this.lista=list;
         return list;
     }
 
