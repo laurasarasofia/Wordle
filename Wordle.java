@@ -14,7 +14,7 @@ public class Wordle {
         File myObj = new File("sanat.xml"); // Luo File muotoisen tiedoston
         SanojenKäsittely sanalista = new SanojenKäsittely(myObj); //Luo SanojenKäsittely objektin sanalista jonka attribuuttina on myObj
         sanalista.tulostaSana(); //kutsuu sanalistan metodia
-        System.out.println(sanalista.getSana());
+        System.out.println(sanalista.getSana()); //tulostaa sanalistan metodin tuoman sanan
 
 
 

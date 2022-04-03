@@ -46,9 +46,9 @@ public class SanojenKäsittely {
         int min = 0; 
         int max =lista.getLength(); //kertoo sanojen määrän
         int b = (int)(Math.random()*(max-min+1)+min);  //arpoo random numeron, jota käytetään sanalistasta random sanan valintaan
-        String sana = lista.item(b).getTextContent();
-        
-        return sana;
+        String sana = lista.item(b).getTextContent(); //muodostaa String muotoisen sanan random listan sanasta
+
+        return sana; //palauttaa sanan
     }
 
 }
