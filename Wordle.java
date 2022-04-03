@@ -11,10 +11,9 @@ public class Wordle {
 
     public static void main(String[] args) throws SAXException, IOException, ParserConfigurationException  {
 
-        System.out.println("hello");
-        File myObj = new File("sanat.xml"); // Specify the filename
-        SanojenKäsittely sanalista = new SanojenKäsittely(myObj);
-        sanalista.tulostaSana();
+        File myObj = new File("sanat.xml"); // Luo File muotoisen tiedoston
+        SanojenKäsittely sanalista = new SanojenKäsittely(myObj); //Luo SanojenKäsittely objektin sanalista jonka attribuuttina on myObj
+        sanalista.tulostaSana(); //kutsuu sanalistan metodia
 
 
 

@@ -16,21 +16,20 @@ public class SanojenKäsittely {
     }
 
     public void tulostaSana () throws SAXException, IOException, ParserConfigurationException{
-        int min = 0;  
 
-        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance(); 
         DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
         Document doc = dBuilder.parse(file);
-        doc.getDocumentElement().normalize();
+        doc.getDocumentElement().normalize();  //rivit 20-23 käsittelee sanat.xml tiedostoa käytettävään muotoon
 
-        NodeList list = doc.getElementsByTagName("sana");
-
-        int max =list.getLength();
+        NodeList list = doc.getElementsByTagName("sana"); //muodostetaan NodeList lista sanat.xml sanoista
+        int min = 0; 
+        int max =list.getLength(); //kertoo sanojen määrän
     
-        System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
+        System.out.println("Root element :" + doc.getDocumentElement().getNodeName()); //Tulostaa juuren nimen (ei tarpeellinen toiminnan kannalta)
 
-        int b = (int)(Math.random()*(max-min+1)+min);  
-        System.out.println(doc.getElementsByTagName("sana").item(b).getTextContent());
+        int b = (int)(Math.random()*(max-min+1)+min);  //arpoo random numeron, jota käytetään sanalistasta random sanan valintaan
+        System.out.println(doc.getElementsByTagName("sana").item(b).getTextContent()); //tulostaa sanalistasta random sanan
     }
 
 }
