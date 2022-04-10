@@ -31,16 +31,14 @@ public class VertaaSanat {
     }
 
     public boolean vertaa(){
-        char[] arvaus = arvausListaksi();
-        char[] vastaus = vastausListaksi();
+
         boolean onko=false;
-        for(int i=0; i<5; i++){
-            if(arvaus[i]==vastaus[i]){
-                onko=true;
-            }
+        if(arvaus.equals(vastaus)==true){
+            onko=true;
         }
 
         return onko;
     }
+
     
 }
