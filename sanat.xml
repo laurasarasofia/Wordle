@@ -156,9 +156,6 @@
       <sana>buumi</sana>
       <sana>buuri</sana>
       <sana>bygga</sana>
-      <sana>bändi</sana>
-      <sana>bänet</sana>
-      <sana>bänks</sana>
       <sana>chili</sana>
       <sana>chips</sana>
       <sana>civis</sana>
@@ -180,29 +177,16 @@
       <sana>duuni</sana>
       <sana>duuri</sana>
       <sana>dyyni</sana>
-      <sana>edetä</sana>
       <sana>eeden</sana>
       <sana>eepos</sana>
       <sana>eesti</sana>
       <sana>eheys</sana>
       <sana>ehken</sana>
-      <sana>ehtiä</sana>
       <sana>ehtoo</sana>
-      <sana>ehtyä</sana>
       <sana>eilen</sana>
       <sana>eines</sana>
-      <sana>eksyä</sana>
       <sana>ellei</sana>
       <sana>eloon</sana>
-      <sana>elpyä</sana>
-      <sana>eläin</sana>
-      <sana>eläjä</sana>
-      <sana>eläke</sana>
-      <sana>elämä</sana>
-      <sana>elävä</sana>
-      <sana>emali</sana>
-      <sana>empiä</sana>
-      <sana>enetä</sana>
       <sana>dippi</sana>
       <sana>disko</sana>
       <sana>dogmi</sana>
@@ -214,23 +198,16 @@
       <sana>duuni</sana>
       <sana>duuri</sana>
       <sana>dyyni</sana>
-      <sana>edetä</sana>
       <sana>eeden</sana>
       <sana>eepos</sana>
       <sana>eesti</sana>
       <sana>eheys</sana>
       <sana>ehken</sana>
-      <sana>ehtiä</sana>
       <sana>ehtoo</sana>
-      <sana>ehtyä</sana>
       <sana>eilen</sana>
       <sana>eines</sana>
-      <sana>eksyä</sana>
       <sana>ellei</sana>
       <sana>eloon</sana>
-      <sana>elpyä</sana>
-      <sana>eläin</sana>
-      <sana>eläjä</sana>
       <sana>diodi</sana>
       <sana>dippi</sana>
       <sana>disko</sana>
@@ -243,32 +220,18 @@
       <sana>duuni</sana>
       <sana>duuri</sana>
       <sana>dyyni</sana>
-      <sana>edetä</sana>
       <sana>eeden</sana>
       <sana>eepos</sana>
       <sana>eesti</sana>
       <sana>eheys</sana>
       <sana>ehken</sana>
-      <sana>ehtiä</sana>
       <sana>ehtoo</sana>
-      <sana>ehtyä</sana>
       <sana>eilen</sana>
       <sana>eines</sana>
-      <sana>eksyä</sana>
       <sana>ellei</sana>
       <sana>eloon</sana>
-      <sana>elpyä</sana>
-      <sana>eläin</sana>
-      <sana>eläjä</sana>
-      <sana>eläke</sana>
-      <sana>elämä</sana>
-      <sana>elävä</sana>
       <sana>emali</sana>
       <sana>empiä</sana>
-      <sana>enetä</sana>
-      <sana>eläke</sana>
-      <sana>elämä</sana>
-      <sana>elävä</sana>
       <sana>emali</sana>
       <sana>empiä</sana>
       <sana>enetä</sana>
@@ -2655,13 +2618,10 @@
    <sana>sikli</sana>
    <sana>siksi</sana>
    <sana>silat</sana>
-   <sana>sileä</sana>
    <sana>silko</sana>
    <sana>silla</sana>
    <sana>silli</sana>
-   <sana>sillä</sana>
    <sana>silmu</sana>
-   <sana>silmä</sana>
    <sana>silsa</sana>
    <sana>silta</sana>
    <sana>silti</sana>
@@ -2791,50 +2751,16 @@
    <sana>suuri</sana>
    <sana>suute</sana>
    <sana>swing</sana>
-   <sana>sydän</sana>
+
    <sana>sykli</sana>
    <sana>syksy</sana>
    <sana>syksy</sana>
    <sana>sylki</sana>
    <sana>sylky</sana>
-   <sana>syltä</sana>
    <sana>sylys</sana>
    <sana>synti</sana>
    <sana>synty</sana>
-   <sana>syrjä</sana>
-   <sana>sysiä</sana>
    <sana>syyhy</sana>
-   <sana>syylä</sana>
-   <sana>syyni</sana>
-   <sana>syyte</sana>
-   <sana>syödä</sana>
-   <sana>syöjä</sana>
-   <sana>syöpä</sana>
-   <sana>sähke</sana>
-   <sana>sähkö</sana>
-   <sana>sähly</sana>
-   <sana>säile</sana>
-   <sana>säilä</sana>
-   <sana>säilö</sana>
-   <sana>säkki</sana>
-   <sana>sälli</sana>
-   <sana>sälpä</sana>
-   <sana>sänki</sana>
-   <sana>sänky</sana>
-   <sana>säppi</sana>
-   <sana>särki</sana>
-   <sana>särky</sana>
-   <sana>särmi</sana>
-   <sana>särmä</sana>
-   <sana>sätky</sana>
-   <sana>sätkä</sana>
-   <sana>sävel</sana>
-   <sana>säyne</sana>
-   <sana>sääde</sana>
-   <sana>sääli</sana>
-   <sana>sääri</sana>
-   <sana>sääty</sana>
-   <sana>säätö</sana>
    <sana>sössö</sana>
    <sana>taain</sana>
    <sana>taaja</sana>
@@ -2910,7 +2836,6 @@
    <sana>teema</sana>
    <sana>teeri</sana>
    <sana>teesi</sana>
-   <sana>tehdä</sana>
    <sana>teili</sana>
    <sana>teini</sana>
    <sana>tekno</sana>
@@ -2921,11 +2846,9 @@
    <sana>tempo</sana>
    <sana>tenho</sana>
    <sana>terho</sana>
-   <sana>teriö</sana>
    <sana>termi</sana>
    <sana>terva</sana>
    <sana>terve</sana>
-   <sana>teräs</sana>
    <sana>tesla</sana>
    <sana>tesma</sana>
    <sana>testi</sana>
@@ -2933,8 +2856,6 @@
    <sana>tiede</sana>
    <sana>tiera</sana>
    <sana>tieto</sana>
-   <sana>tietä</sana>
-   <sana>tiheä</sana>
    <sana>tihku</sana>
    <sana>tiili</sana>
    <sana>tiima</sana>
@@ -3067,49 +2988,18 @@
    <sana>tuuri</sana>
    <sana>tweed</sana>
    <sana>twist</sana>
-   <sana>tyhjä</sana>
-   <sana>tyhjö</sana>
-   <sana>tyhmä</sana>
    <sana>tykki</sana>
    <sana>tykki</sana>
    <sana>tykky</sana>
-   <sana>tyköä</sana>
    <sana>tylli</sana>
    <sana>tylli</sana>
-   <sana>tylsä</sana>
-   <sana>tynkä</sana>
    <sana>typpi</sana>
-   <sana>typäs</sana>
-   <sana>tyriä</sana>
-   <sana>tyrmä</sana>
    <sana>tyrni</sana>
    <sana>tytti</sana>
-   <sana>tyttö</sana>
-   <sana>tytär</sana>
    <sana>tyven</sana>
    <sana>tyyli</sana>
    <sana>tyyni</sana>
    <sana>tyyny</sana>
-   <sana>tähde</sana>
-   <sana>tähkä</sana>
-   <sana>tähti</sana>
-   <sana>tähän</sana>
-   <sana>täkki</sana>
-   <sana>täkki</sana>
-   <sana>tälli</sana>
-   <sana>tänne</sana>
-   <sana>täplä</sana>
-   <sana>tässä</sana>
-   <sana>tästä</sana>
-   <sana>täten</sana>
-   <sana>täysi</sana>
-   <sana>täyte</sana>
-   <sana>töhkä</sana>
-   <sana>tölli</sana>
-   <sana>töniä</sana>
-   <sana>törky</sana>
-   <sana>törmä</sana>
-   <sana>tötsä</sana>
    <sana>töyry</sana>
    <sana>uhata</sana>
    <sana>uhkea</sana>
@@ -3235,7 +3125,6 @@
    <sana>vedos</sana>
    <sana>vehje</sana>
    <sana>vehka</sana>
-   <sana>vehnä</sana>
    <sana>veisu</sana>
    <sana>veivi</sana>
    <sana>vekki</sana>
@@ -3245,10 +3134,8 @@
    <sana>velmu</sana>
    <sana>venhe</sana>
    <sana>venho</sana>
-   <sana>venyä</sana>
-   <sana>venät</sana>
+
    <sana>veppi</sana>
-   <sana>vepsä</sana>
    <sana>verbi</sana>
    <sana>veres</sana>
    <sana>verho</sana>
@@ -3261,14 +3148,11 @@
    <sana>vesoa</sana>
    <sana>vessa</sana>
    <sana>wessi</sana>
-   <sana>vetää</sana>
    <sana>vichy</sana>
    <sana>video</sana>
    <sana>video</sana>
-   <sana>viedä</sana>
+
    <sana>viehe</sana>
-   <sana>viejä</sana>
-   <sana>vielä</sana>
    <sana>vieno</sana>
    <sana>vieri</sana>
    <sana>vihje</sana>
@@ -3313,7 +3197,6 @@
    <sana>vippi</sana>
    <sana>vippi</sana>
    <sana>vippi</sana>
-   <sana>vireä</sana>
    <sana>virhe</sana>
    <sana>virhe</sana>
    <sana>viriö</sana>
@@ -3362,83 +3245,14 @@
    <sana>vuosi</sana>
    <sana>vuota</sana>
    <sana>vuoto</sana>
-   <sana>vyöry</sana>
-   <sana>vyöte</sana>
-   <sana>vähin</sana>
-   <sana>vähän</sana>
-   <sana>väite</sana>
-   <sana>väive</sana>
-   <sana>väljä</sana>
-   <sana>välke</sana>
-   <sana>välys</sana>
-   <sana>värve</sana>
-   <sana>väsky</sana>
-   <sana>väsyä</sana>
-   <sana>vätys</sana>
-   <sana>väylä</sana>
-   <sana>väärä</sana>
    <sana>yhdes</sana>
    <sana>yhtiö</sana>
    <sana>yhtye</sana>
-   <sana>yhtyä</sana>
-   <sana>yhäti</sana>
    <sana>yksin</sana>
-   <sana>yksiö</sana>
    <sana>yleis</sana>
-   <sana>yletä</sana>
-   <sana>ylevä</sana>
    <sana>ylite</sana>
-   <sana>ylpeä</sana>
-   <sana>yltyä</sana>
-   <sana>yltää</sana>
-   <sana>ylväs</sana>
-   <sana>ylävä</sana>
-   <sana>yninä</sana>
-   <sana>ynseä</sana>
-   <sana>yrmeä</sana>
-   <sana>yrtti</sana>
-   <sana>yskiä</sana>
-   <sana>yskös</sana>
-   <sana>yöasu</sana>
-   <sana>yökkö</sana>
-   <sana>yöpuu</sana>
-   <sana>yöpyä</sana>
-   <sana>yötyö</sana>
-   <sana>yötön</sana>
-   <sana>yöuni</sana>
    <sana>zambo</sana>
    <sana>zloty</sana>
    <sana>zombi</sana>
    <sana>zoomi</sana>
-   <sana>ähinä</sana>
-   <sana>ähkiä</sana>
-   <sana>ähkyä</sana>
-   <sana>ähkää</sana>
-   <sana>äiskä</sana>
-   <sana>äityä</sana>
-   <sana>äkeys</sana>
-   <sana>äkkiä</sana>
-   <sana>äkämä</sana>
-   <sana>äkätä</sana>
-   <sana>älinä</sana>
-   <sana>älkää</sana>
-   <sana>älytä</sana>
-   <sana>ämyri</sana>
-   <sana>änkkä</sana>
-   <sana>äpäre</sana>
-   <sana>äpärä</sana>
-   <sana>äreys</sana>
-   <sana>ärinä</sana>
-   <sana>ärjyä</sana>
-   <sana>ärtyä</sana>
-   <sana>äsken</sana>
-   <sana>äyräs</sana>
-   <sana>ääliö</sana>
-   <sana>äänes</sana>
-   <sana>äänne</sana>
-   <sana>ääntö</sana>
-   <sana>öinen</sana>
-   <sana>öisin</sana>
-   <sana>ölinä</sana>
-   <sana>örinä</sana>
    </sanat>

@@ -17,10 +17,29 @@ public class Wordle {
         
 
         Scanner lukija = new Scanner(System.in);
-        System.out.println("Arvaa 5-kirjaiminen sana: ");
+
+        String vastaus=sanalista.getSana();
+
+        for(int i=0; i<6; i++){
+            System.out.println("Arvaa 5-kirjaiminen sana: ");
+            String arvaus =lukija.nextLine();
+            Pelilauta lauta =new Pelilauta(arvaus,i);
+            lauta.tulostaLauta();
+            VertaaSanat testi = new VertaaSanat(arvaus, vastaus);
+            if(testi.vertaa()==true){
+                i=6;
+                System.out.println("Arvasit oikein!");
+            }
+            else{
+                continue;
+            }
+        }
+        
+
+
         String arvaus =lukija.nextLine();
-        Pelilauta lauta =new Pelilauta(arvaus);
-        lauta.tulostaLauta();
+        //Pelilauta lauta =new Pelilauta(arvaus);
+        //lauta.tulostaLauta();
 
         VertaaSanat testi = new VertaaSanat(arvaus, sanalista.getSana());
 
