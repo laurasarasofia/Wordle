@@ -11,24 +11,15 @@ public class VertaaSanat {
         return this.vastaus;
     }
 
-    public char[] arvausListaksi(){
-        char[] arvausLista = new char[5];
-   
-        for (int i = 0; i <arvaus.length(); i++) {
-            arvausLista[i] = arvaus.charAt(i);
+    public char[] listaksi(String sana){
+        char[] lista = new char[5];
+        for(int i=0; i<5; i++){
+            lista[i]=sana.charAt(i);
         }
-        return arvausLista;
+
+        return lista;
     }
 
-    public  char[] vastausListaksi(){
-        char[] vastausLista = new char[5];
-
-        for (int i = 0; i <vastaus.length(); i++) {
-            vastausLista[i] = vastaus.charAt(i);
-        }
-        return vastausLista;
-
-    }
 
     public boolean vertaa(){
 
@@ -38,6 +29,25 @@ public class VertaaSanat {
         }
 
         return onko;
+    }
+
+    public boolean[] vertaaLisaa(){ //palauttaa boolean listan, joissa oikeiden kirjainten kohdalla true ja muissa false
+        boolean[] indeksit = new boolean[5];
+        char[] arvaus= listaksi(this.arvaus);
+        char[] vastaus=listaksi(this.vastaus);
+        boolean onko=false;
+        for(int i=0; i<5; i++){
+            if(arvaus[i]==vastaus[i]){
+                onko=true;
+                indeksit[i]=onko;
+            }
+        }
+        return indeksit;
+    }
+    public void sisaltaakoKirjaimen(){//ei tee vielä mitään
+        char[] arvaus= listaksi(this.arvaus);
+        char[] vastaus=listaksi(this.vastaus);
+    
     }
 
     
