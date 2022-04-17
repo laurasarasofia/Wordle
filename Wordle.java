@@ -10,55 +10,53 @@ import org.xml.sax.SAXException;
  */
 public class Wordle {
 
-    public static void main(String[] args) throws SAXException, IOException, ParserConfigurationException  {
+    public static void main(String[] args) throws SAXException, IOException, ParserConfigurationException {
 
         File myObj = new File("sanat.xml"); // Luo File muotoisen tiedoston
-        SanojenKäsittely sanalista = new SanojenKäsittely(myObj); //Luo SanojenKäsittely objektin sanalista jonka attribuuttina on myObj
-        
+        SanojenKäsittely sanalista = new SanojenKäsittely(myObj); // Luo SanojenKäsittely objektin sanalista jonka
+                                                                  // attribuuttina on myObj
 
         Scanner lukija = new Scanner(System.in);
 
-        String vastaus=sanalista.getSana();
+        String vastaus = sanalista.getSana();
 
-        for(int i=0; i<6; i++){
-            System.out.println("Arvaa 5-kirjaiminen sana: ");
-            String arvaus =lukija.nextLine();
-            Pelilauta lauta =new Pelilauta(arvaus,i,vastaus);
-            lauta.tulostaLauta();
-            VertaaSanat testi = new VertaaSanat(arvaus, vastaus);
-            if(testi.vertaa()==true){
-                i=6;
-                System.out.println("Arvasit oikein!");
-            }
-            else if(i<5){
-                continue;
+        for (int i = 1; i < 6; i++) {
+            System.out.println("Kierros " + i  + " Arvaa 5-kirjaiminen sana: ");
+            String arvaus = lukija.nextLine();
+            if (sanalista.onkoListassa(arvaus) == true) {
+                Pelilauta lauta = new Pelilauta(arvaus, i-1, vastaus);
+                lauta.tulostaLauta();
+                VertaaSanat testi = new VertaaSanat(arvaus, vastaus);
+                if (testi.vertaa() == true) {
+                    i = 6;
+                    System.out.println("Arvasit oikein!");
+                } else if (i < 5) {
+                    continue;
+                } else {
+                    System.out.println("Arvaukset loppu! oikea vastaus: " + Vari.CYAN + vastaus + Vari.RESET);
+                    break;
+                }
             }else{
-                System.out.println("Arvaukset loppu! oikea vastaus: " + Vari.CYAN+  vastaus + Vari.RESET);
-                break;
+                System.out.println("Arvaus ei ole listassa.");
+                //break;
             }
         }
-        
 
-
-        String arvaus =lukija.nextLine();
-        //Pelilauta lauta =new Pelilauta(arvaus);
-        //lauta.tulostaLauta();
+        String arvaus = lukija.nextLine();
+        // Pelilauta lauta =new Pelilauta(arvaus);
+        // lauta.tulostaLauta();
 
         VertaaSanat testi = new VertaaSanat(arvaus, sanalista.getSana());
 
         System.out.println(testi.vertaa());
 
-        System.out.println(sanalista.getSana()); //tulostaa sanalistan metodin tuoman sanan
-        System.out.println(sanalista.getSana()); //tulostaa sanalistan metodin tuoman sanan
-        System.out.println(sanalista.getSana()); //tulostaa sanalistan metodin tuoman sanan
-        System.out.println(sanalista.getSana()); //tulostaa sanalistan metodin tuoman sanan
-        System.out.println(sanalista.getSana()); //tulostaa sanalistan metodin tuoman sanan
-        System.out.println(sanalista.getSana()); //tulostaa sanalistan metodin tuoman sanan
-        System.out.println(sanalista.getSana()); //tulostaa sanalistan metodin tuoman sanan
-
-
-
-     
+        System.out.println(sanalista.getSana()); // tulostaa sanalistan metodin tuoman sanan
+        System.out.println(sanalista.getSana()); // tulostaa sanalistan metodin tuoman sanan
+        System.out.println(sanalista.getSana()); // tulostaa sanalistan metodin tuoman sanan
+        System.out.println(sanalista.getSana()); // tulostaa sanalistan metodin tuoman sanan
+        System.out.println(sanalista.getSana()); // tulostaa sanalistan metodin tuoman sanan
+        System.out.println(sanalista.getSana()); // tulostaa sanalistan metodin tuoman sanan
+        System.out.println(sanalista.getSana()); // tulostaa sanalistan metodin tuoman sanan
 
     }
 }

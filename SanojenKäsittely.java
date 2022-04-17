@@ -12,6 +12,7 @@ public class SanojenKäsittely {
     File file;
 
 
+
     public SanojenKäsittely(File file){
         this.file=file;
     }
@@ -49,5 +50,14 @@ public class SanojenKäsittely {
 
         return sana; //palauttaa sanan
     }
-
+    public boolean onkoListassa (String arvaus) throws ParserConfigurationException, SAXException, IOException{
+        NodeList lista = tiedostonKäsittely();  //testaa onko arvattu sana listassa
+        boolean onko=false;
+        for(int i=0; i<lista.getLength(); i++){
+            if(lista.item(i).getTextContent().equals(arvaus)==true){
+                onko=true;
+            }
+        }
+        return onko;
+    }
 }

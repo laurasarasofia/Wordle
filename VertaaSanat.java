@@ -31,7 +31,7 @@ public class VertaaSanat {
         return onko;
     }
 
-    public boolean[] vertaaLisaa(){
+    public boolean[] vertaaLisaa(){ //palauttaa boolean listan, joissa oikeiden kirjainten kohdalla true ja muissa false
         boolean[] indeksit = new boolean[5];
         char[] arvaus= listaksi(this.arvaus);
         char[] vastaus=listaksi(this.vastaus);
@@ -44,7 +44,7 @@ public class VertaaSanat {
         }
         return indeksit;
     }
-    public void sisaltaakoKirjaimen(){
+    public void sisaltaakoKirjaimen(){//ei tee vielä mitään
         char[] arvaus= listaksi(this.arvaus);
         char[] vastaus=listaksi(this.vastaus);
     

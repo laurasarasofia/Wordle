@@ -12,6 +12,8 @@ public class Pelilauta {
 
     public String[][] muodostaLauta() {
 
+        //PelinTila tila = new PelinTila(sana);
+
         String[] kirjaimet = new String[sana.length()];
 
 
@@ -38,7 +40,7 @@ public class Pelilauta {
             for (int i = 0; i < sana.length(); i++) { // arvaus kaksi
                 VertaaSanat testi = new VertaaSanat(sana, vastaus);
                 boolean[] vertailu =testi.vertaaLisaa();
-                if(vertailu[i]==true){
+                if(vertailu[i]==true){ //vertaa sanasta tehtyä listaa vertailu-listaan, ja kaikki vertailulistan true kirjaimet tulostetaan vihreänä
                     lauta[1][i] = Vari.GREEN + kirjaimet[i] + Vari.RESET;
                 }else{
                     lauta[1][i]=kirjaimet[i];
@@ -50,7 +52,7 @@ public class Pelilauta {
             for (int i = 0; i < sana.length(); i++) { // arvaus kolme
                 VertaaSanat testi = new VertaaSanat(sana, vastaus);
                 boolean[] vertailu =testi.vertaaLisaa();
-                if(vertailu[i]==true){
+                if(vertailu[i]==true){ //vertaa sanasta tehtyä listaa vertailu-listaan, ja kaikki vertailulistan true kirjaimet tulostetaan vihreänä
                     lauta[2][i] = Vari.GREEN + kirjaimet[i]+ Vari.RESET;
                 }else{
                     lauta[2][i]=kirjaimet[i];
