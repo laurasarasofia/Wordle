@@ -44,6 +44,11 @@ public class VertaaSanat {
         }
         return indeksit;
     }
+    public void sisaltaakoKirjaimen(){
+        char[] arvaus= listaksi(this.arvaus);
+        char[] vastaus=listaksi(this.vastaus);
+    
+    }
 
     
 }

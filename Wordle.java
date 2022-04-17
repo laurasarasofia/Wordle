@@ -30,8 +30,11 @@ public class Wordle {
                 i=6;
                 System.out.println("Arvasit oikein!");
             }
-            else{
+            else if(i<5){
                 continue;
+            }else{
+                System.out.println("Arvaukset loppu! oikea vastaus: " + Vari.CYAN+  vastaus + Vari.RESET);
+                break;
             }
         }
         
