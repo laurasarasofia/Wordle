@@ -23,7 +23,7 @@ public class Wordle {
         for(int i=0; i<6; i++){
             System.out.println("Arvaa 5-kirjaiminen sana: ");
             String arvaus =lukija.nextLine();
-            Pelilauta lauta =new Pelilauta(arvaus,i);
+            Pelilauta lauta =new Pelilauta(arvaus,i,vastaus);
             lauta.tulostaLauta();
             VertaaSanat testi = new VertaaSanat(arvaus, vastaus);
             if(testi.vertaa()==true){
@@ -34,7 +34,6 @@ public class Wordle {
                 continue;
             }
         }
-        System.out.println("hei");
         
 
 
