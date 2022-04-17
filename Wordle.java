@@ -42,21 +42,5 @@ public class Wordle {
             }
         }
 
-        String arvaus = lukija.nextLine();
-        // Pelilauta lauta =new Pelilauta(arvaus);
-        // lauta.tulostaLauta();
-
-        VertaaSanat testi = new VertaaSanat(arvaus, sanalista.getSana());
-
-        System.out.println(testi.vertaa());
-
-        System.out.println(sanalista.getSana()); // tulostaa sanalistan metodin tuoman sanan
-        System.out.println(sanalista.getSana()); // tulostaa sanalistan metodin tuoman sanan
-        System.out.println(sanalista.getSana()); // tulostaa sanalistan metodin tuoman sanan
-        System.out.println(sanalista.getSana()); // tulostaa sanalistan metodin tuoman sanan
-        System.out.println(sanalista.getSana()); // tulostaa sanalistan metodin tuoman sanan
-        System.out.println(sanalista.getSana()); // tulostaa sanalistan metodin tuoman sanan
-        System.out.println(sanalista.getSana()); // tulostaa sanalistan metodin tuoman sanan
-
     }
 }

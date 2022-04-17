@@ -44,9 +44,19 @@ public class VertaaSanat {
         }
         return indeksit;
     }
-    public void sisaltaakoKirjaimen(){//ei tee vielä mitään
+    public boolean[] sisaltaakoKirjaimen(){//ei tee vielä mitään
         char[] arvaus= listaksi(this.arvaus);
-        char[] vastaus=listaksi(this.vastaus);
+        boolean onko=false;
+        boolean [] indeksit=new boolean[5];
+
+        for(int i=0; i<5; i++){
+            if(vastaus.contains(String.valueOf(arvaus[i]))==true){
+                onko=true;
+                indeksit[i]=onko;
+            }
+        }
+
+        return indeksit;
     
     }
 

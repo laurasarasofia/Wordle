@@ -12,7 +12,7 @@ public class Pelilauta {
 
     public String[][] muodostaLauta() {
 
-        //PelinTila tila = new PelinTila(sana);
+        //PelinTila tila = new PelinTila();
 
         String[] kirjaimet = new String[sana.length()];
 
@@ -23,38 +23,57 @@ public class Pelilauta {
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 5; j++) {
                 lauta[i][j] = " ";
+                //tila.luoPelitila(lauta);
             }
         }
         if (kierros == 0) {
             for (int i = 0; i < sana.length(); i++) { // arvaus yksi
                 VertaaSanat testi = new VertaaSanat(sana, vastaus);
-                boolean[] vertailu =testi.vertaaLisaa();
-                if(vertailu[i]==true){
+                boolean[] vertailuV =testi.vertaaLisaa();
+                boolean[] vertailuK=testi.sisaltaakoKirjaimen();
+                if(vertailuV[i]==true){
                     lauta[0][i] = Vari.GREEN + kirjaimet[i]+ Vari.RESET;
+                    //tila.luoPelitila(lauta);
+                }
+                else if(vertailuK[i]==true){
+                    lauta[0][i]=Vari.YELLOW + kirjaimet[i]+ Vari.RESET;
+
                 }else{
                     lauta[0][i]=kirjaimet[i];
+                    //tila.luoPelitila(lauta);
                 }
             }
+          
         }
         if(kierros==1){
             for (int i = 0; i < sana.length(); i++) { // arvaus kaksi
                 VertaaSanat testi = new VertaaSanat(sana, vastaus);
-                boolean[] vertailu =testi.vertaaLisaa();
-                if(vertailu[i]==true){ //vertaa sanasta tehtyä listaa vertailu-listaan, ja kaikki vertailulistan true kirjaimet tulostetaan vihreänä
+                boolean[] vertailuV =testi.vertaaLisaa();
+                boolean[] vertailuK=testi.sisaltaakoKirjaimen();
+                if(vertailuV[i]==true){ //vertaa sanasta tehtyä listaa vertailu-listaan, ja kaikki vertailulistan true kirjaimet tulostetaan vihreänä
                     lauta[1][i] = Vari.GREEN + kirjaimet[i] + Vari.RESET;
-                }else{
+                }
+                else if (vertailuK[i]==true){
+                    lauta[1][i]=Vari.YELLOW + kirjaimet[i]+ Vari.RESET;
+                }
+                else{
                     lauta[1][i]=kirjaimet[i];
                 }
             }
+            
 
         }
         if(kierros==2){
             for (int i = 0; i < sana.length(); i++) { // arvaus kolme
                 VertaaSanat testi = new VertaaSanat(sana, vastaus);
-                boolean[] vertailu =testi.vertaaLisaa();
-                if(vertailu[i]==true){ //vertaa sanasta tehtyä listaa vertailu-listaan, ja kaikki vertailulistan true kirjaimet tulostetaan vihreänä
+                boolean[] vertailuV =testi.vertaaLisaa();
+                boolean[] vertailuK=testi.sisaltaakoKirjaimen();
+                if(vertailuV[i]==true){ //vertaa sanasta tehtyä listaa vertailu-listaan, ja kaikki vertailulistan true kirjaimet tulostetaan vihreänä
                     lauta[2][i] = Vari.GREEN + kirjaimet[i]+ Vari.RESET;
-                }else{
+                }else if (vertailuK[i]==true){
+                    lauta[2][i]=Vari.YELLOW + kirjaimet[i]+ Vari.RESET;
+                }
+                else{
                     lauta[2][i]=kirjaimet[i];
                 }
             }
@@ -62,10 +81,14 @@ public class Pelilauta {
         if(kierros==3){
             for (int i = 0; i < sana.length(); i++) { // arvaus neljä
                 VertaaSanat testi = new VertaaSanat(sana, vastaus);
-                boolean[] vertailu =testi.vertaaLisaa();
-                if(vertailu[i]==true){
+                boolean[] vertailuV =testi.vertaaLisaa();
+                boolean[] vertailuK=testi.sisaltaakoKirjaimen();
+                if(vertailuV[i]==true){
                     lauta[3][i] = Vari.GREEN + kirjaimet[i]+ Vari.RESET;
-                }else{
+                }else if (vertailuK[i]==true){
+                    lauta[3][i]=Vari.YELLOW + kirjaimet[i]+ Vari.RESET;
+                }
+                else{
                     lauta[3][i]=kirjaimet[i];
                 }
             }
@@ -74,10 +97,15 @@ public class Pelilauta {
         if(kierros==4){
             for (int i = 0; i < sana.length(); i++) { // arvaus viisi
                 VertaaSanat testi = new VertaaSanat(sana, vastaus);
-                boolean[] vertailu =testi.vertaaLisaa();
-                if(vertailu[i]==true){
+                boolean[] vertailuV =testi.vertaaLisaa();
+                boolean[] vertailuK=testi.sisaltaakoKirjaimen();
+                if(vertailuV[i]==true){
                     lauta[4][i] = Vari.GREEN + kirjaimet[i]+ Vari.RESET;
-                }else{
+                
+                }else if (vertailuK[i]==true){
+                    lauta[4][i]=Vari.YELLOW + kirjaimet[i]+ Vari.RESET;
+                }
+                else{
                     lauta[4][i]=kirjaimet[i];
                 }
             }
@@ -86,10 +114,15 @@ public class Pelilauta {
         if(kierros==5){
             for (int i = 0; i < sana.length(); i++) { // arvaus kuusi
                 VertaaSanat testi = new VertaaSanat(sana, vastaus);
-                boolean[] vertailu =testi.vertaaLisaa();
-                if(vertailu[i]==true){
+                boolean[] vertailuV =testi.vertaaLisaa();
+                boolean[] vertailuK=testi.sisaltaakoKirjaimen();
+                if(vertailuV[i]==true){
                     lauta[5][i] = Vari.GREEN + kirjaimet[i]+ Vari.RESET;
-                }else{
+                }
+                else if (vertailuK[i]==true){
+                    lauta[5][i]=Vari.YELLOW + kirjaimet[i]+ Vari.RESET;
+                }
+                else{
                     lauta[5][i]=kirjaimet[i];
                 }
             }
