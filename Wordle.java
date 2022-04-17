@@ -34,6 +34,7 @@ public class Wordle {
                 continue;
             }
         }
+        System.out.println("hei");
         
 
 
