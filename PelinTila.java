@@ -1,7 +1,7 @@
 public class PelinTila {
     String[][]lauta = new String [6][5];
 
-    public void tyhjaLauta(){
+    public void tyhjaLauta(){ //muodostaa pelilaudan, jossa null sijasta on " "
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 5; j++) {
                 this.lauta[i][j] = " ";
@@ -10,16 +10,11 @@ public class PelinTila {
         }
     }
 
-    public void tallennaLautaan(String [] arvaus, int kierros){
-        //String[][]lauta = new String [6][5];
-
-        for(int i=0; i<5;i++){
+    public void tallennaLautaan(String [] arvaus, int kierros){ //tallentaa edellisessä metodissa luotuun lautaan sille parametrinä
+        //for(int i=0; i<5;i++){                      //annetun Stringlistan
             this.lauta[kierros]=arvaus;
-
-        }
+        //}
         tulostaLauta();
-
-
     }
 
     public void tulostaLauta() {
