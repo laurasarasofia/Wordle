@@ -1,4 +1,4 @@
-public class Vari {
+public class Vari { //tässä luokassa on tarvittavat värit
     // Reset
     public static final String RESET = "\033[0m";  // Text Reset
 
