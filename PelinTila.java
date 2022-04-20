@@ -11,13 +11,13 @@ public class PelinTila {
     }
 
     public void tallennaLautaan(String [] arvaus, int kierros){ //tallentaa edellisessä metodissa luotuun lautaan sille parametrinä
-        //for(int i=0; i<5;i++){                      //annetun Stringlistan
-            this.lauta[kierros]=arvaus;
-        //}
+                             //annetun Stringlistan ja tulostaa pelilaudan
+        this.lauta[kierros]=arvaus;
+        
         tulostaLauta();
     }
 
-    public void tulostaLauta() {
+    public void tulostaLauta() { //tulostaa pelilaudan indekseittäin
 
 
         System.out.println(lauta[0][0] + "|" + lauta[0][1] + "|" + lauta[0][2] + "|" + lauta[0][3] + "|" + lauta[0][4]);
