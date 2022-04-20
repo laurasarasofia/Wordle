@@ -20,8 +20,8 @@ public class Wordle {
 
         String vastaus = sanalista.getSana();
 
-        for (int i = 1; i < 6; i++) {
-            System.out.println("Kierros " + i  + " Arvaa 5-kirjaiminen sana: ");
+        for (int i = 0; i < 6; i++) {
+            System.out.println("Kierros " + i+1  + " Arvaa 5-kirjaiminen sana: ");
             String arvaus = lukija.nextLine();
             if (sanalista.onkoListassa(arvaus) == true) {
                 Pelilauta lauta = new Pelilauta(arvaus, i-1, vastaus);
