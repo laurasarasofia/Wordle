@@ -19,13 +19,14 @@ public class Wordle {
         Scanner lukija = new Scanner(System.in);
 
         String vastaus = sanalista.getSana();
+        Pelilauta lauta = new Pelilauta(  vastaus);
 
         for (int i = 0; i < 6; i++) {
-            System.out.println("Kierros " + i+1  + " Arvaa 5-kirjaiminen sana: ");
+            System.out.println("Kierros " + (i+1)  + " Arvaa 5-kirjaiminen sana: ");
             String arvaus = lukija.nextLine();
             if (sanalista.onkoListassa(arvaus) == true) {
-                Pelilauta lauta = new Pelilauta(arvaus, i-1, vastaus);
-                lauta.tulostaLauta();
+                lauta.muodostaLauta(i, arvaus);
+
                 VertaaSanat testi = new VertaaSanat(arvaus, vastaus);
                 if (testi.vertaa() == true) {
                     i = 6;

@@ -3,18 +3,20 @@ public class Pelilauta {
     String vastaus;
     String[][] lauta = new String[6][5];
     int kierros;
+    PelinTila tila = new PelinTila();
 
-    public Pelilauta(String sana, int kierros, String vastaus) {
+    public Pelilauta(  String vastaus) {
         this.sana = sana;
         this.kierros = kierros;
         this.vastaus=vastaus;
+        tila.tyhjaLauta();
     }
 
-    public String[][] muodostaLauta() {
+    public String[][] muodostaLauta(int kierros, String sana) {
 
-        //PelinTila tila = new PelinTila();
 
         String[] kirjaimet = new String[sana.length()];
+        String[] arvaus = new String[5];
 
 
         for (int i = 0; i < sana.length(); i++) {
@@ -23,7 +25,7 @@ public class Pelilauta {
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 5; j++) {
                 lauta[i][j] = " ";
-                //tila.luoPelitila(lauta);
+            
             }
         }
         if (kierros == 0) {
@@ -33,16 +35,20 @@ public class Pelilauta {
                 boolean[] vertailuK=testi.sisaltaakoKirjaimen();
                 if(vertailuV[i]==true){
                     lauta[0][i] = Vari.GREEN + kirjaimet[i]+ Vari.RESET;
-                    //tila.luoPelitila(lauta);
+                    arvaus[i]= Vari.GREEN + kirjaimet[i]+ Vari.RESET;
+
                 }
                 else if(vertailuK[i]==true){
                     lauta[0][i]=Vari.YELLOW + kirjaimet[i]+ Vari.RESET;
+                    arvaus[i]=Vari.YELLOW + kirjaimet[i]+ Vari.RESET;
+
 
                 }else{
                     lauta[0][i]=kirjaimet[i];
+                    arvaus[i]=kirjaimet[i];
                     //tila.luoPelitila(lauta);
                 }
-            }
+            }tila.tallennaLautaan(arvaus, kierros);
           
         }
         if(kierros==1){
@@ -52,14 +58,20 @@ public class Pelilauta {
                 boolean[] vertailuK=testi.sisaltaakoKirjaimen();
                 if(vertailuV[i]==true){ //vertaa sanasta tehtyä listaa vertailu-listaan, ja kaikki vertailulistan true kirjaimet tulostetaan vihreänä
                     lauta[1][i] = Vari.GREEN + kirjaimet[i] + Vari.RESET;
+                    arvaus[i]= Vari.GREEN + kirjaimet[i]+ Vari.RESET;
+
                 }
                 else if (vertailuK[i]==true){
                     lauta[1][i]=Vari.YELLOW + kirjaimet[i]+ Vari.RESET;
+                    arvaus[i]=Vari.YELLOW + kirjaimet[i]+ Vari.RESET;
+
                 }
                 else{
                     lauta[1][i]=kirjaimet[i];
+                    arvaus[i]=kirjaimet[i];
+                
                 }
-            }
+            }tila.tallennaLautaan(arvaus, kierros);
             
 
         }
@@ -70,13 +82,16 @@ public class Pelilauta {
                 boolean[] vertailuK=testi.sisaltaakoKirjaimen();
                 if(vertailuV[i]==true){ //vertaa sanasta tehtyä listaa vertailu-listaan, ja kaikki vertailulistan true kirjaimet tulostetaan vihreänä
                     lauta[2][i] = Vari.GREEN + kirjaimet[i]+ Vari.RESET;
+                    arvaus[i]= Vari.GREEN + kirjaimet[i]+ Vari.RESET;
                 }else if (vertailuK[i]==true){
                     lauta[2][i]=Vari.YELLOW + kirjaimet[i]+ Vari.RESET;
+                    arvaus[i]=Vari.YELLOW + kirjaimet[i]+ Vari.RESET;
                 }
                 else{
                     lauta[2][i]=kirjaimet[i];
+                    arvaus[i]=kirjaimet[i];
                 }
-            }
+            }tila.tallennaLautaan(arvaus, kierros);
         }
         if(kierros==3){
             for (int i = 0; i < sana.length(); i++) { // arvaus neljä
@@ -85,13 +100,16 @@ public class Pelilauta {
                 boolean[] vertailuK=testi.sisaltaakoKirjaimen();
                 if(vertailuV[i]==true){
                     lauta[3][i] = Vari.GREEN + kirjaimet[i]+ Vari.RESET;
+                    arvaus[i]=Vari.GREEN + kirjaimet[i]+ Vari.RESET;
                 }else if (vertailuK[i]==true){
                     lauta[3][i]=Vari.YELLOW + kirjaimet[i]+ Vari.RESET;
+                    arvaus[i]=Vari.YELLOW + kirjaimet[i]+ Vari.RESET;
                 }
                 else{
                     lauta[3][i]=kirjaimet[i];
+                    arvaus[i]=kirjaimet[i];
                 }
-            }
+            }tila.tallennaLautaan(arvaus, kierros);
 
         }
         if(kierros==4){
@@ -101,14 +119,17 @@ public class Pelilauta {
                 boolean[] vertailuK=testi.sisaltaakoKirjaimen();
                 if(vertailuV[i]==true){
                     lauta[4][i] = Vari.GREEN + kirjaimet[i]+ Vari.RESET;
+                    arvaus[i]= Vari.GREEN + kirjaimet[i]+ Vari.RESET;
                 
                 }else if (vertailuK[i]==true){
                     lauta[4][i]=Vari.YELLOW + kirjaimet[i]+ Vari.RESET;
+                    arvaus[i]=Vari.YELLOW + kirjaimet[i]+ Vari.RESET;
                 }
                 else{
                     lauta[4][i]=kirjaimet[i];
+                    arvaus[i]=kirjaimet[i];
                 }
-            }
+            }tila.tallennaLautaan(arvaus, kierros);
 
         }
         if(kierros==5){
@@ -118,14 +139,17 @@ public class Pelilauta {
                 boolean[] vertailuK=testi.sisaltaakoKirjaimen();
                 if(vertailuV[i]==true){
                     lauta[5][i] = Vari.GREEN + kirjaimet[i]+ Vari.RESET;
+                    arvaus[i]= Vari.GREEN + kirjaimet[i]+ Vari.RESET;
                 }
                 else if (vertailuK[i]==true){
                     lauta[5][i]=Vari.YELLOW + kirjaimet[i]+ Vari.RESET;
+                    arvaus[i]=Vari.YELLOW + kirjaimet[i]+ Vari.RESET;
                 }
                 else{
                     lauta[5][i]=kirjaimet[i];
+                    arvaus[i]=kirjaimet[i];
                 }
-            }
+            }tila.tallennaLautaan(arvaus, kierros);
 
         }
 
@@ -135,7 +159,7 @@ public class Pelilauta {
 
     public void tulostaLauta() {
 
-        String[][] lauta = muodostaLauta();
+        //String[][] lauta = muodostaLauta();
 
         System.out.println(lauta[0][0] + "|" + lauta[0][1] + "|" + lauta[0][2] + "|" + lauta[0][3] + "|" + lauta[0][4]);
         System.out.println("---------");
