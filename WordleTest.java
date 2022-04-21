@@ -14,7 +14,7 @@ public class WordleTest {
         String arvaus="kissa";
         String vastaus="kissa";
         VertaaSanat sanat = new VertaaSanat(arvaus, vastaus);
-        assertEquals(false, sanat.vertaa());
+        assertEquals(true, sanat.vertaa());
     }
     
 }

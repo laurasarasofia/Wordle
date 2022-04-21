@@ -33,7 +33,7 @@ public class Pelilauta {
                 VertaaSanat testi = new VertaaSanat(sana, vastaus); //Luodaan VertaaSanat objekti
                 boolean[] vertailuV =testi.vertaaLisaa(); //testataan onko arvauksen kirjaimia oikeilla paikoilla
                 boolean[] vertailuK=testi.sisaltaakoKirjaimen(); //testataan onko arvauksessa oikeita kirjaimia
-                if(vertailuV[i]==true){ //jos kirjaimet ovat oikeilla paikoilla muutetaan ne vihreiksi
+                if(vertailuV[i]==true){ //vertaa sanasta tehtyä listaa vertailu-listaan, ja kaikki vertailulistan true kirjaimet tulostetaan vihreänä
                     lauta[0][i] = Vari.GREEN + kirjaimet[i]+ Vari.RESET;
                     arvaus[i]= Vari.GREEN + kirjaimet[i]+ Vari.RESET; //luodaan arvauslista kirjaimista värikoodeineen
 
